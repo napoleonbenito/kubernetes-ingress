@@ -22,7 +22,7 @@ This document describes how to install the NGINX Ingress Controller in your Kube
     ```
     $ git clone https://github.com/nginxinc/kubernetes-ingress/
     $ cd kubernetes-ingress/deployments
-    $ git checkout v1.12.0
+    $ git checkout v2.0.2
     ```
 
 ## 1. Configure RBAC
@@ -85,7 +85,7 @@ If you would like to use the TCP and UDP load balancing features of the Ingress 
     $ kubectl apply -f common/crds/k8s.nginx.org_globalconfigurations.yaml
     ```
 
-> **Feature Status**: The TransportServer, GlobalConfiguration and Policy resources are available as a preview feature: it is suitable for experimenting and testing; however, it must be used with caution in production environments. Additionally, while the feature is in preview, we might introduce some backward-incompatible changes to the resources specification in the next releases.
+> **Feature Status**: The TransportServer, GlobalConfiguration and Policy resources are available as a preview feature[^1]: We might introduce some backward-incompatible changes to the resource definition. The feature is disabled by default.
 
 ### Resources for NGINX App Protect
 
@@ -228,3 +228,7 @@ $ kubectl get pods --namespace=nginx-ingress
     ```
     $ kubectl delete -f common/crds/
     ```
+
+## Footnotes
+
+[^1]: Capabilities labeled in preview status are fully supported.
