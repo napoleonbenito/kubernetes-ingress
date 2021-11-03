@@ -4,7 +4,7 @@ go 1.17
 
 require (
 	github.com/aws/aws-sdk-go-v2/config v1.9.0
-	github.com/aws/aws-sdk-go-v2/service/marketplacemetering v1.5.2
+	github.com/aws/aws-sdk-go-v2/service/marketplacemetering v1.6.0
 	github.com/golang-jwt/jwt/v4 v4.1.0
 	github.com/golang/glog v1.0.0
 	github.com/google/go-cmp v0.5.6
@@ -12,10 +12,10 @@ require (
 	github.com/nginxinc/nginx-prometheus-exporter v0.9.0
 	github.com/prometheus/client_golang v1.11.0
 	github.com/spiffe/go-spiffe v1.1.0
-	k8s.io/api v0.22.2
-	k8s.io/apimachinery v0.22.2
-	k8s.io/client-go v0.22.2
-	k8s.io/code-generator v0.22.2
+	k8s.io/api v0.22.3
+	k8s.io/apimachinery v0.22.3
+	k8s.io/client-go v0.22.3
+	k8s.io/code-generator v0.22.3
 	sigs.k8s.io/controller-tools v0.7.0
 )
 
